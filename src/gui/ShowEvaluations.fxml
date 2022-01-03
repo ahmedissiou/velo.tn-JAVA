@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="750.0" prefWidth="990.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ShowEvaluationsEventController">
+   
+   <children>
+      <TableView fx:id="table" layoutX="625.0" layoutY="268.0" prefHeight="305.0" prefWidth="251.0">
+        <columns>
+          <TableColumn fx:id="C2" prefWidth="85.0" text="Note" />
+            <TableColumn fx:id="C3" prefWidth="164.0" text="Comment" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="image" fitHeight="253.0" fitWidth="351.0" layoutX="83.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="titre" layoutX="327.0" layoutY="139.0" prefHeight="64.0" prefWidth="400.0" text="Label" textFill="#ff8400">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="titre1" layoutX="96.0" layoutY="75.0" prefHeight="64.0" prefWidth="438.0" text="Evaluations pour le cours de :">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

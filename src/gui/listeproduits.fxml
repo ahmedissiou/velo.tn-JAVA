@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="1011.0" prefWidth="1398.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ListeProduitsController">
+   <children>
+      <Label fx:id="nomUtilisateur" layoutX="203.0" layoutY="34.0" prefHeight="21.0" prefWidth="167.0" text="liste des produits" textFill="#0c8bae" />
+      <TableView id="listeProduits" fx:id="listeProduits" layoutX="258.0" layoutY="161.0" onMouseClicked="#afficherImage" prefHeight="573.0" prefWidth="642.0">
+        <columns>
+          <TableColumn fx:id="nomProduit" prefWidth="199.0" text="Nom du Produit" />
+          <TableColumn fx:id="prixProduit" prefWidth="199.0" text="Prix" />
+            <TableColumn fx:id="ajouterPanier" prefWidth="243.0" text="Action" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="imageview" fitHeight="269.0" fitWidth="294.0" layoutX="1009.0" layoutY="694.0" onMouseClicked="#afficherImage" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="holderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="991.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AllcoursController">
+   <children>
+      <ImageView fx:id="image1" fitHeight="140.0" fitWidth="317.0" layoutX="83.0" layoutY="88.0" nodeOrientation="INHERIT" pickOnBounds="true" />
+      <Label fx:id="label1" layoutX="156.0" layoutY="60.0" prefHeight="28.0" prefWidth="192.0" text="Label" textAlignment="CENTER" textFill="#c96800">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn1_event" layoutX="169.0" layoutY="257.0" mnemonicParsing="false" onAction="#affichage_1" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #FFFFFF;" text="Afficher" textAlignment="CENTER">
+         <font>
+            <Font name="Century Gothic Bold" size="17.0" />
+         </font>
+         <effect>
+            <DropShadow color="#00000080" height="54.43" radius="20.2575" width="28.6" />
+         </effect>
+      </Button>
+      <ImageView fx:id="image3" fitHeight="140.0" fitWidth="344.0" layoutX="80.0" layoutY="415.0" nodeOrientation="INHERIT" pickOnBounds="true" />
+      <Label fx:id="label3" layoutX="146.0" layoutY="374.0" prefHeight="28.0" prefWidth="241.0" text="Label" textAlignment="CENTER" textFill="#c96800">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn3_event" layoutX="169.0" layoutY="579.0" mnemonicParsing="false" onAction="#affichage_3" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #FFFFFF;" text="Afficher" textAlignment="CENTER">
+         <font>
+            <Font name="Century Gothic Bold" size="17.0" />
+         </font>
+         <effect>
+            <DropShadow color="#00000080" height="54.43" radius="20.2575" width="28.6" />
+         </effect>
+      </Button>
+      <ImageView fx:id="image4" fitHeight="140.0" fitWidth="350.0" layoutX="496.0" layoutY="421.0" nodeOrientation="INHERIT" pickOnBounds="true" />
+      <Label fx:id="label4" layoutX="612.0" layoutY="374.0" prefHeight="28.0" prefWidth="241.0" text="Label" textAlignment="CENTER" textFill="#c96800">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn4_event" layoutX="595.0" layoutY="579.0" mnemonicParsing="false" onAction="#affichage_4" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #FFFFFF;" text="Afficher" textAlignment="CENTER">
+         <font>
+            <Font name="Century Gothic Bold" size="17.0" />
+         </font>
+         <effect>
+            <DropShadow color="#00000080" height="54.43" radius="20.2575" width="28.6" />
+         </effect>
+      </Button>
+      <ImageView fx:id="courssuivant" fitHeight="49.0" fitWidth="50.0" layoutX="928.0" layoutY="363.0" onMouseClicked="#suivant_event" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../font-awesome_4-7-0_angle-right_256_0_e67e22_none.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="coursprecedent" fitHeight="49.0" fitWidth="50.0" layoutX="14.0" layoutY="356.0" onMouseClicked="#event_precedent" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../font-awesome_4-7-0_chevron-left_256_0_e67e22_none.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image2" fitHeight="140.0" fitWidth="339.0" layoutX="547.0" layoutY="88.0" nodeOrientation="INHERIT" pickOnBounds="true" />
+      <Label fx:id="label2" layoutX="621.0" layoutY="60.0" prefHeight="28.0" prefWidth="241.0" text="Label" textAlignment="CENTER" textFill="#c96800">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn2_event" layoutX="595.0" layoutY="257.0" mnemonicParsing="false" onAction="#affichage_2" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #FFFFFF;" text="Afficher" textAlignment="CENTER">
+         <font>
+            <Font name="Century Gothic Bold" size="17.0" />
+         </font>
+         <effect>
+            <DropShadow color="#00000080" height="54.43" radius="20.2575" width="28.6" />
+         </effect>
+      </Button>
+      <JFXTextField fx:id="rechercheBar" focusColor="#6f3a3a" labelFloat="true" layoutX="775.0" maxWidth="382.0" minWidth="168.0" prefHeight="61.0" prefWidth="216.0" promptText="Rechercher " unFocusColor="#b24646">
+         <font>
+            <Font name="Blackadder ITC" size="26.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

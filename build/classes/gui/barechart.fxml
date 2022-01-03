@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="avr" prefHeight="598.0" prefWidth="891.0" xmlns="http://javafx.com/javafx/8.0.66" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.BarechartController">
+  
+    <children>
+        <BarChart fx:id="BarChart" layoutX="158.0" layoutY="95.0" prefHeight="408.0" prefWidth="632.0" title="Evaluations">
+            <xAxis>
+                <CategoryAxis side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis side="LEFT" />
+            </yAxis>
+        </BarChart>
+        <JFXButton fx:id="LOAD" layoutX="158.0" layoutY="56.0" onAction="#LOAD" text="LOAD" />
+      <JFXButton fx:id="back" buttonType="RAISED" layoutX="496.0" layoutY="530.0" onAction="#back" ripplerFill="WHITE" style="-fx-background-color: #75D032; -fx-border-radius: 100%;" text="Annuler" textFill="WHITE">
+         <font>
+            <Font name="Gadugi" size="16.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>

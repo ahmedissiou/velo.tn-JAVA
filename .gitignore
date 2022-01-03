@@ -1,0 +1,11 @@
+build
+dist
+image
+nbproject
+test 
+.build
+.dist
+.image
+.nbproject
+.test 
+
